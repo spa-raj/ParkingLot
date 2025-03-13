@@ -1,11 +1,12 @@
 package models;
 
 import java.util.List;
+import java.util.Set;
 
 public class ParkingSpot extends BaseModel{
     private int number;
     private ParkingSpotStatus parkingSpotStatus;
-    private List<VehicleType> supportedVehicleTypes;
+    private Set<VehicleType> supportedVehicleTypes;
 
     public int getNumber() {
         return number;
@@ -23,11 +24,11 @@ public class ParkingSpot extends BaseModel{
         this.parkingSpotStatus = parkingSpotStatus;
     }
 
-    public List<VehicleType> getSupportedVehicleTypes() {
+    public Set<VehicleType> getSupportedVehicleTypes() {
         return supportedVehicleTypes;
     }
 
-    public void setSupportedVehicleTypes(List<VehicleType> supportedVehicleTypes) {
+    public void setSupportedVehicleTypes(Set<VehicleType> supportedVehicleTypes) {
         this.supportedVehicleTypes = supportedVehicleTypes;
     }
 }

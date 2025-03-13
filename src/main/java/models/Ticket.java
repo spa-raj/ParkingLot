@@ -1,42 +1,18 @@
 package models;
 
+import lombok.Getter;
+import lombok.Setter;
+
 import java.time.LocalDateTime;
 
+@Getter
+@Setter
 public class Ticket extends BaseModel{
     private LocalDateTime entryTime;
     private Vehicle vehicle;
     private Gate gate;
     private ParkingSpot parkingSpot;
+    private Operator operator;
 
-    public LocalDateTime getEntryTime() {
-        return entryTime;
-    }
 
-    public void setEntryTime(LocalDateTime entryTime) {
-        this.entryTime = entryTime;
-    }
-
-    public Vehicle getVehicle() {
-        return vehicle;
-    }
-
-    public void setVehicle(Vehicle vehicle) {
-        this.vehicle = vehicle;
-    }
-
-    public Gate getGate() {
-        return gate;
-    }
-
-    public void setGate(Gate gate) {
-        this.gate = gate;
-    }
-
-    public ParkingSpot getParkingSpot() {
-        return parkingSpot;
-    }
-
-    public void setParkingSpot(ParkingSpot parkingSpot) {
-        this.parkingSpot = parkingSpot;
-    }
 }
